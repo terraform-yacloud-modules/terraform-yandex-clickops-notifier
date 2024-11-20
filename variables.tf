@@ -46,7 +46,7 @@ variable "function_log_level" {
 variable "telegram_token" {
   description = "List of subject names that won't raise notifications. Format: a comma-separated string."
   type        = string
-  default     = ""
+  default     = "-"
   sensitive   = true
 }
 
@@ -56,7 +56,7 @@ variable "telegram_chat_ids" {
 Ensure the provided `telegram_token` has access to the specified chat IDs.
 EOT
   type        = string
-  default     = ""
+  default     = "-"
 }
 
 variable "telegram_cc" {
@@ -65,13 +65,13 @@ variable "telegram_cc" {
   Provide this as a string separated by comma representing Telegram usernames (e.g., `user1, user2`).
 EOT
   type        = string
-  default     = ""
+  default     = "-"
 }
 
 variable "slack_webhook_url" {
   description = "List of subject names that won't raise notifications. Format: a comma-separated string."
   type        = string
-  default     = ""
+  default     = "-"
   sensitive   = true
 }
 
@@ -81,7 +81,7 @@ variable "slack_cc" {
   Provide this as a string separated by comma representing slack username ids (e.g., `<@U0422RZRC77>", <@U042211RC00>"`).
 EOT
   type        = string
-  default     = ""
+  default     = "-"
 }
 
 variable "excluded_subject_names" {

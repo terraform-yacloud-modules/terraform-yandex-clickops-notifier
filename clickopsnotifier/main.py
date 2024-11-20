@@ -38,6 +38,7 @@ def get_messengers() -> List[Messenger]:
     if check_empty_envvar(slack_webhooks):
         logging.warning(
             "Looks like that slack webhook is not configured, check SLACK_WEBHOOKS")
+        slack_webhooks = []
     else:
         slack_webhooks = [url.strip() for url in slack_webhooks.split(",") if
                           url.strip()]
@@ -74,7 +75,7 @@ def get_messengers() -> List[Messenger]:
     telegram_token = os.environ.get("TELEGRAM_TOKEN", "")
     if check_empty_envvar(telegram_token):
         logging.warning(
-            "Looks like that telegram token is not configured, check SLACK_WEBHOOKS")
+            "Looks like that telegram token is not configured, check TELEGRAM_TOKEN")
         telegram_token = ""
 
     telegram_chat_ids = os.environ.get("TELEGRAM_CHAT_IDS", "")

@@ -25,6 +25,81 @@ variable "labels" {
 ################################################################################
 # Others
 ################################################################################
+variable "audit_trail_management_events_filters" {
+  description = "Structure describing filtering process for management events"
+  type = list(object({
+    resource_id : optional(string)
+    resource_type : string
+  }))
+  default = [
+    {
+      resource_type = "resource-manager.folder"
+    }
+  ]
+}
+
+variable "audit_trail_data_events_filter" {
+  description = "Structure describing filtering process for the service-specific data events"
+  type = list(object({
+    service : string
+    resource_id : optional(string)
+    resource_type : string
+    included_events : optional(list(string))
+    excluded_events : optional(list(string))
+  }))
+  default = [
+    {
+      service       = "apploadbalancer"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "mdb.mysql"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "compute"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "mdb.mongodb"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "lockbox"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "kms"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "iam"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "dns"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "smartwebsecurity"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "mdb.postgresql"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "websql"
+      resource_type = "resource-manager.folder"
+    },
+    {
+      service       = "storage"
+      resource_type = "resource-manager.folder"
+    }
+  ]
+}
+
+
 variable "function_trigger_batch_cutoff" {
   description = "Batch Duration in seconds for Yandex Cloud Functions Trigger"
   type        = number

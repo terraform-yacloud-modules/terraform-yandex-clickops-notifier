@@ -157,5 +157,3 @@ module "clickops_notifications" {
     }
   ]
 }
-
-

@@ -62,62 +62,8 @@ module "audit_trails" {
   service_account_id               = module.iam_account.id
   logging_destination_log_group_id = module.audit_trails_logging_group.id
 
-  management_events_filters = [
-    {
-      resource_type = "resource-manager.folder"
-    }
-  ]
-
-  data_events_filter = [
-    {
-      service       = "apploadbalancer"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "mdb.mysql"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "compute"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "mdb.mongodb"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "lockbox"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "kms"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "iam"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "dns"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "smartwebsecurity"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "mdb.postgresql"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "websql"
-      resource_type = "resource-manager.folder"
-    },
-    {
-      service       = "storage"
-      resource_type = "resource-manager.folder"
-    }
-  ]
+  management_events_filters = var.audit_trail_management_events_filters
+  data_events_filter        = var.audit_trail_data_events_filter
 
   depends_on = [
     module.iam_account,

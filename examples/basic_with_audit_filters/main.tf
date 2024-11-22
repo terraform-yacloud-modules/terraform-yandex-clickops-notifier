@@ -39,7 +39,7 @@ module "clickops_notifications" {
     {
       service       = "mdb.mysql"
       resource_type = "resource-manager.folder"
-      included_events = [
+      excluded_events = [
         "yandex.cloud.audit.mdb.mysql.RevokeUserPermission",
         "yandex.cloud.audit.mdb.mysql.CreateDatabase",
         "yandex.cloud.audit.mdb.mysql.DeleteDatabase",
@@ -60,7 +60,7 @@ module "clickops_notifications" {
     {
       service       = "mdb.mongodb"
       resource_type = "resource-manager.folder"
-      included_events = [
+      excluded_events = [
         "yandex.cloud.audit.mdb.mongodb.DeleteUser",
         "yandex.cloud.audit.mdb.mongodb.GrantUserPermission",
         "yandex.cloud.audit.mdb.mongodb.UpdateUser",
@@ -78,7 +78,7 @@ module "clickops_notifications" {
     {
       service       = "kms"
       resource_type = "resource-manager.folder"
-      included_events = [
+      excluded_events = [
         "yandex.cloud.audit.kms.Encrypt",
         "yandex.cloud.audit.kms.asymmetricsignature.AsymmetricSign",
         "yandex.cloud.audit.kms.asymmetricsignature.AsymmetricGetPublicKey",
@@ -95,7 +95,7 @@ module "clickops_notifications" {
     {
       service       = "iam"
       resource_type = "resource-manager.folder"
-      included_events = [
+      excluded_events = [
         "yandex.cloud.audit.iam.CreateIamToken",
         "yandex.cloud.audit.iam.oslogin.GenerateSshCertificate",
         "yandex.cloud.audit.iam.oslogin.CheckSshPolicy",

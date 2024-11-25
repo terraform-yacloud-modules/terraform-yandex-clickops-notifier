@@ -89,7 +89,7 @@ data "archive_file" "clickopsnotifier_zip" {
 }
 
 module "function" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-function.git?ref=rc/1.1.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-function.git?ref=rc/1.3.0"
 
   function_name        = var.blank_name
   public_function      = false

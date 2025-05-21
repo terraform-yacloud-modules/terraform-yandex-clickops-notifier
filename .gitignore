@@ -40,3 +40,4 @@ terraform.rc
 
 *.zip
 *.bkp
+.idea

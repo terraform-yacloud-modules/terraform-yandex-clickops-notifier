@@ -28,7 +28,7 @@ module "kms_key" {
 }
 
 module "lockbox" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox.git?ref=rc/1.19.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox.git?ref=rc/1.20.0"
 
   name        = var.blank_name
   description = ""

@@ -16,7 +16,7 @@ module "iam_account" {
 }
 
 module "kms_key" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-kms.git?ref=v1.25.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-kms.git?ref=v1.26.0"
 
   name        = var.blank_name
   description = ""

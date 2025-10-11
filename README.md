@@ -1,7 +1,7 @@
 # Yandex Cloud ClickOps Notifier Terraform module
 
 Terraform module which creates Yandex Cloud ClickOps Notifier resources.
-ClickOps notifier is based on Yandex Cloud Function that monitors audit logs for manual actions (ClickOps) in your Yandex Cloud environment. 
+ClickOps notifier is based on Yandex Cloud Function that monitors audit logs for manual actions (ClickOps) in your Yandex Cloud environment.
 When such actions are detected, the function sends notifications to Slack or Telegram to ensure compliance and visibility.
 
 <p align="center">
@@ -16,7 +16,7 @@ to give users references for how to use the module(s) as well as testing/validat
 module. If contributing to the project, please be sure to make any appropriate updates to the relevant examples to allow
 maintainers to test your changes and to keep the examples up to date for users. Thank you!
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -77,7 +77,7 @@ maintainers to test your changes and to keep the examples up to date for users. 
 ## Outputs
 
 No outputs.
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 ## License
 

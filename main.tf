@@ -72,7 +72,7 @@ module "audit_trails" {
 }
 
 module "function_logging_group" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git?ref=v1.17.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git?ref=v1.20.0"
 
   name        = format("%s-function", var.blank_name)
   description = "Log group for Yandex Audit"

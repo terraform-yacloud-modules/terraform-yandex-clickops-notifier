@@ -1,0 +1,21 @@
+diff --git a/README.md b/README.md
+index 1f77ad1..b9e0131 100644
+--- a/README.md
++++ b/README.md
+@@ -36,12 +36,12 @@ maintainers to test your changes and to keep the examples up to date for users.
+ 
+ | Name | Source | Version |
+ |------|--------|---------|
+-| <a name="module_audit_trails"></a> [audit\_trails](#module\_audit\_trails) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-audit-trails.git | v2.20.0 |
+-| <a name="module_audit_trails_logging_group"></a> [audit\_trails\_logging\_group](#module\_audit\_trails\_logging\_group) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git | v1.17.0 |
++| <a name="module_audit_trails"></a> [audit\_trails](#module\_audit\_trails) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-audit-trails.git | v2.23.0 |
++| <a name="module_audit_trails_logging_group"></a> [audit\_trails\_logging\_group](#module\_audit\_trails\_logging\_group) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git | v1.21.0 |
+ | <a name="module_function"></a> [function](#module\_function) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-function.git | rc/1.16.0 |
+-| <a name="module_function_logging_group"></a> [function\_logging\_group](#module\_function\_logging\_group) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git | v1.17.0 |
++| <a name="module_function_logging_group"></a> [function\_logging\_group](#module\_function\_logging\_group) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git | v1.21.0 |
+ | <a name="module_iam_account"></a> [iam\_account](#module\_iam\_account) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-iam.git//modules/iam-account | v1.28.0 |
+-| <a name="module_kms_key"></a> [kms\_key](#module\_kms\_key) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-kms.git | v1.27.0 |
++| <a name="module_kms_key"></a> [kms\_key](#module\_kms\_key) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-kms.git | v1.29.0 |
+ | <a name="module_lockbox"></a> [lockbox](#module\_lockbox) | git::https://github.com/terraform-yacloud-modules/terraform-yandex-lockbox.git | rc/1.20.0 |
+ 
+ ## Resources

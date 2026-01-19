@@ -41,7 +41,7 @@ module "lockbox" {
 }
 
 module "audit_trails_logging_group" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git?ref=v1.26.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-logging-group.git?ref=v1.27.0"
 
   name        = format("%s-audit-trails", var.blank_name)
   description = "Log group for Yandex Audit"

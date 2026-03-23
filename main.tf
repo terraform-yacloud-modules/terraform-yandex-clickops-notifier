@@ -1,5 +1,5 @@
 module "iam_account" {
-  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-iam.git//modules/iam-account?ref=v1.38.0"
+  source = "git::https://github.com/terraform-yacloud-modules/terraform-yandex-iam.git//modules/iam-account?ref=v1.39.0"
 
   name        = var.blank_name
   description = ""
